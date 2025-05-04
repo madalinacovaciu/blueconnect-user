@@ -17,4 +17,4 @@ workflows:
     publishing:
       email:
         recipients:
-          - sebastian.migdalin@gmail.com
+   
