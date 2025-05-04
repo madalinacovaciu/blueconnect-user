@@ -3,10 +3,7 @@ workflows:
     name: BlueConnect User APK Build
     max_build_duration: 15
     environment:
-      vars:
-        JAVA_VERSION: "17"
-      android:
-        image: "latest"
+      java: 17
     scripts:
       - name: Set permissions and build
         script: |
@@ -14,7 +11,3 @@ workflows:
           ./gradlew assembleDebug
     artifacts:
       - app/build/outputs/**/*.apk
-    publishing:
-      email:
-        recipients:
-   
